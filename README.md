@@ -11,6 +11,8 @@ This is a simple AI-backed hotel reservation system written in Python. It simula
 - Create, retrieve, update, and cancel reservations
 - MORE COMING SOON
 
+---
+
 ## Example Chat
 User:   Hi, let's create a reservation!
 
