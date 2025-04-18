@@ -1,6 +1,6 @@
 from google.adk.agents import Agent
 
-from .tools.bookings import get_reservations, create_reservation, get_hotels, get_rooms
+from .tools.bookings import find_customer, get_reservations, create_reservation, get_hotels, get_rooms
 
 root_agent = Agent(
     name="hotel_agent",
@@ -16,5 +16,5 @@ root_agent = Agent(
         3. Check what room types are available for those dates (use the get_rooms function to get the context for all available rooms)
         4. Once a user selects a room type, the room is booked for the guest """
     ),
-    tools=[get_reservations, create_reservation, get_hotels, get_rooms]
+    tools=[find_customer, get_reservations, create_reservation, get_hotels, get_rooms]
 )
